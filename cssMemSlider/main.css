@@ -17,6 +17,10 @@ input {
     visibility: hidden;
 }
 
+span {
+    font-size: 2rem;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -26,7 +30,6 @@ input {
     background-color: blueviolet;
     padding: 2rem;
     margin: 0 auto;
-
 }
 
 .container {
@@ -37,14 +40,12 @@ input {
     display: flex;
     width: 400%;
     height: 80%;
-    border-radius: 2rem;
     transition: all .6s ease;
 }
 
 .image-item {
     width: 25%;
     height: 100%;
-    border-radius: 2rem;
 }
 
 .item1 {
@@ -136,6 +137,9 @@ input {
 }
 
 @media (max-width: 360px) {
+   span {
+       font-size: 1rem;
+   }
     .btn {
         width: 2.5rem;
         margin: 0 5px;
