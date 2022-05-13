@@ -24,7 +24,6 @@ span {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2.5fr 0.5fr;
     width: 100%;
     height: 100%;
     background-color: blueviolet;
@@ -86,7 +85,7 @@ span {
     display: flex;
     width: 400%;
     color: #f9f9f9;
-    transition: all .6s ease;
+    transition: all 1s ease;
 }
 
 .text-item {
@@ -97,6 +96,22 @@ span {
 .control-box {
     display: flex;
     justify-content: center;
+}
+
+.btn {
+    width: 3rem;
+    height: 0.8rem;
+    background-color: rgb(235, 226, 243);
+    border: 2px solid #fff;
+    margin: 0 15px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform: scale(0.9);
 }
 
 #i1:checked ~ .transform {
@@ -115,25 +130,20 @@ span {
     transform: translateX(-75%);
 }
 
-.btn {
-    width: 3rem;
-    height: 0.8rem;
-    background-color: #f9f9f9;
-    border: 2px solid #fff;
-    margin: 0 15px;
-    cursor: pointer;
-    opacity: 1;
-    border-radius: 8px;
-    transition: all 0.5s ease;
+#i1:checked ~ .active label:nth-child(1) {
+    background-color: rgb(193, 130, 248);
 }
 
-.btn:hover {
-    opacity: 0.8;
-    transform: scale(0.9);
+#i2:checked ~ .active label:nth-child(2) {
+    background-color: rgb(193, 130, 248);
 }
 
-.btn:active {
-    opacity: 0;
+#i3:checked ~ .active label:nth-child(3) {
+    background-color: rgb(193, 130, 248);
+}
+
+#i4:checked ~ .active label:nth-child(4) {
+    background-color: rgb(193, 130, 248);
 }
 
 @media (max-width: 360px) {
